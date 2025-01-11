@@ -1,0 +1,12 @@
+npx create-react-app logic-prover --template typescript
+
+# add to .gitignore
+/.idea
+/dist-electron
+
+# run
+npm i -D electron electron-builder electron-store mocha
+
+# modify package.json
+
+

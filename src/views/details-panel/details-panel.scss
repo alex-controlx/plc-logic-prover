@@ -1,0 +1,88 @@
+@import "../../app-variables";
+
+.details-panel-wrapper {
+  background-color: $lp-details-panel-background;
+  display: flex;
+  flex-direction: row;
+  contain: strict;
+  flex: 1;
+  overflow: hidden;
+  //padding: 16px;
+}
+
+.details-panel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.test-results-panel {
+  min-width: 600px;
+  padding: 6px 0;
+  border-top: 1px solid #9a9a9a;
+  background: #ffffff;
+}
+
+.test-results-panel-inner {
+  margin: 0 16px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.test-results-panel-header {
+  display: flex;
+  align-items: center;
+}
+
+
+.test-results-code-block {
+  height: 90px;
+  overflow: auto;
+  text-transform: none;
+  font-family: monospace;
+  display: block;
+  margin: 6px 0;
+  border-radius: 3px;
+  box-shadow: inset 0 0 0 1px rgba(16, 22, 26, 0.15);
+  background: rgba(255, 255, 255, 0.7);
+  padding: 6px;
+  line-height: 1.4;
+  color: #182026;
+  font-size: 13px;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.action-unit-panel {
+  flex: 1;
+  min-height: 500px;
+  margin: 16px;
+  overflow: auto;
+  max-width: 800px;
+  min-width: 600px;
+}
+
+.description-details {
+  min-width: 400px;
+  max-width: 400px;
+}
+
+.lp-panel-form-group > .bp3-label {
+  min-width: 150px;
+}
+
+.lp-panel-form-group > .bp3-form-content {
+  min-width: 400px;
+  max-width: 400px;
+}
+
+.lp-panel-control-group > .bp3-control-content {
+  min-width: 400px;
+  max-width: 400px;
+}
+
+.is-dirty-dot {
+  margin-left: 5px;
+  align-self: baseline;
+}

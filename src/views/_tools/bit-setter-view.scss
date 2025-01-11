@@ -1,0 +1,26 @@
+.bit-setter-container {
+  padding: 10px;
+  height: 100%;
+  overflow: auto;
+}
+
+.bit-groups {
+  display: flex;
+  flex-direction: row;
+}
+
+.bit-group-outer {
+  display: flex;
+  flex-direction: row;
+  margin: 0 5px;
+}
+
+.bit-group-inner {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2px;
+}
+
+.decimal-groups {
+  margin: 10px 7px;
+}

@@ -1,0 +1,23 @@
+.app-config-dialog-form-group > .bp3-label {
+  min-width: 300px;
+}
+
+.app-config-dialog-form-group > .bp3-form-content {
+  min-width: 130px;
+  max-width: 130px;
+}
+
+.app-config-dialog-form-group .bp3-input-group {
+  width: 100px;
+  user-select: none;
+}
+
+.app-config-dialog {
+  max-height: 400px;
+  overflow-x: auto;
+  padding: 5px;
+}
+
+.static-input-group > .bp3-form-content {
+  margin-top: 6px;
+}

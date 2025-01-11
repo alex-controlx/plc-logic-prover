@@ -1,0 +1,10 @@
+@import "../../app-variables";
+
+.Workspace {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+

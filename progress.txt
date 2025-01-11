@@ -1,0 +1,294 @@
+02/11/2020
+    Next:
+        Group disable/enable actionSets + right icon has to be Enable/Disable
+
+14/10/2020
+  Done: Bug@Sidebar: all Action Units are invalid on Project Import
+        Test@UnitChecker: all methods checked
+
+06/10/2020
+  Done: Bug@App: Toast unnecessarily takes the focus
+        Bug@TagsPage: Not rendering table above 200 rows
+        Bug@TagsPage: Not rendering table properly on some conditions
+        New@Sidebar: Highlight invalid AU
+        New@Sidebar: Invalid AU is muted on disable
+        New@UnitTestConfig: when deleting NoMonitorTadId highlight it in the config
+
+  Next: Bug@auTagListGroup: Just added Tag not shown in the list
+        √ Bug@Sidebar: all Action Units are invalid on Project Import
+
+30/09/2020
+  Done: Bug@TagPage: Loss of focus on tag change
+        Bug@TagPage: not showing more than 200 tags
+  Next: √ Bug@App: Toast unnecessarily takes the focus
+
+14/09/2020
+  Next: √ Highlight invalid AU in sidebar
+        √ Sidebar: Remove Error sign on Set disable
+        √ Invalid Units: when deleting NoMonitorTadId from Unit Test highlight them in the config component
+        √ Test tag usage: 1. Add tag usage in edit; 2. Delete on Edit and on Au delete
+        √ Test invalid AUs: Add on adding AU, on edit AU, on tag delete
+        √ Test invalid AUs: Remove on AU delete, on AU disable, on AS delete, on AS disable
+        √ Test: setInvalidUnitWithUsedDeletedTag in storage
+        √ TagPage: not showing more than 200 tags
+        √ Fix: Loss of focus on tag change
+
+02/09/2020
+  Done: Sort Used in Tags page
+        Highlight invalid fields @ action-unit-views
+
+30/08/2020
+  Done: add used tag property to Tag for all Action Unit
+    An alert window with number of tags and duplicate tags
+  Next: √ Sort Used in Tags page
+    Test: if delete tag which is used in AU should trigger UnitCheck
+    √ At AU views: Invalid highlight for fields where tags were deleted
+
+13/07/2020
+  Bug fixed: inconsistent action unit check for errors
+
+30/06/2020
+    Tag Page: performance improved
+    Fixed: sorting, deleting, adding tags, importing tags
+    Added: focus cell
+    Added: Confirm popup on deletion
+    Added: Generic prompt window
+
+29/06/2020
+  Tag Page: Import tags from RSLogix5000 export CSV
+  Fixed: No save to Tags DB on no changes
+  Fixed: No toasts on group tag import and deletion
+  Fixed: Danger toast on 0 tags imported
+  Tag Page: Number of highlighted rows in Delete button
+  Tag Page: Spinner added when importing tags
+  Fixed: Not rendering table when tags deleted
+
+27/06/2020
+  Done: Bug fixed: trim spaces when typing tag's description
+        Bug fixed: when duplicate tag "copy" word moved to the end of the name
+        Tag Page: when creating tag names, spaces replaced with underscores
+        Tag Page: Highlight multiple rows
+        Tag Page: Copy highlighted tag rows
+        Tag Page: Paste highlighted tag rows
+        Tag Page: Delete multiple rows
+        Tag Page: Paste highlighted tags strait from RSLogix5000
+        Fixed: Tooltip for the Add new tag button
+
+17/06/2020
+  Done: React report view removed
+        Critical bug fixed: Unit Test does not execute Toggle section when Unit Test failed
+
+16/06/2020
+  Done: Reports: a React template before deployment to LP Center
+        Fixed: descriptions in action units config.
+        Fixed: Skipped are disabled, so it is fixed now
+
+14/06/2020
+  Done: Reports: added a window, logo, test data, the report generator
+        Common CSS moved to index.scss
+        Fixed: Action Set `finishedAt` timestamp when skipped on critical Action Units.
+        Fixed: If Action Set skipped due critical Action Units it still have `sleep` interval.
+
+09/06/2020
+  Done: Adding headers to update checker.
+        Bump up the dependencies.
+        Request confirmation on app closing when test is running.
+
+08/06/2020
+  Done: Bug fixed: long names in select fields didn't display properly.
+        Bug fixed: data loss warning on creating a new or moving Action Unit when dirty.
+        Started on unit tests.
+
+07/06/2020
+  Done: Action Unit Criticality added.
+        Hide/show action unit description.
+        ControlX logo added to About page.
+        Added number of skipped, passed and failed actions to Test Runner.
+        Action Unit Criticality tested.
+
+02/06/2020
+  Done: AppConfig defaults adjusted for most machines.
+
+01/06/2020
+  Done: Reset Sidebar state on project import
+        Don't show toasts on project import
+        AppConfig defaults corrected
+        About Window size fixed
+
+01/06/2020
+  Done: Added App config dialog.
+        Window classes moved to root.
+        Own version on Task-Easy.
+        Project has config with Unit Test tolerance.
+        Removed IProject and replaced with Project class.
+        Fixed: Store Move position of windows on WindowsOS.
+
+29/05/2020
+  Done: Fixed sizes of About page and Bit Setter.
+
+26/05/2020
+  Done: Bug: 2 digits in fractional part of "after, ms" in Expected output.
+        Fixed: Delete first value in Tags for array for Action units.
+        Added: Filter tags by description in Action Units.
+        Added: Spell checker.
+        Reverse order of files array in post-release.js.
+  Next: Remove sourceMap from Dist on Build. Fix project version. As per Github and Trello.
+
+21/05/2020
+  Done: Added number of completed tests in final result to Output Log.
+  Next: Reverse order of files array in post-release.js. As per Github and Trello.
+
+21/05/2020
+  Done: Bug fixed: Unit Test iterated through all Expected values when should find only one with same tag ID.
+
+21/05/2020
+  Done: Fix DEFAULT_UPDATE_CHECK_INTERVAL after testing. Post execution of Unit Test doesn't reset input action values.
+  Next: As per Github and Trello.
+
+11/05/2020
+  Done: Fixed About window size for Windows. Added interval for update checks.
+  Next: Fix DEFAULT_UPDATE_CHECK_INTERVAL after testing. Create PLC logic for LP core testing. Bugs as per Trello.
+
+10/05/2020
+  Done: Heartbeat timer needs to be >= 0.5. Remove main timeout from UI. Tags page: filter input loses focus on typing
+  Next: Create PLC logic for LP core testing. Bugs as per Trello.
+
+10/05/2020
+  Done: About window. Default positions.
+  Next: Bugs as per Trello. Create PLC logic for LP core testing.
+
+09/05/2020
+  Done: Only one instance. Make runner windows a bit wider. LP update function. Build for windows.
+  Next: As per Trello. Create PLC logic for LP core testing. Fix bugs.
+
+07/05/2020
+  Done: AutoUpdate module added. Build for mc and linux is tested. Post release upload script is completed and tested.
+  Next: Only one instance. Make runner windows a bit wider. Create PLC logic for LP core testing. Fix bugs. LP update function. Build for windows.
+
+03/05/2020
+  Done: Described Actions for LP core testing.
+  Next: Create PLC logic for LP core testing. Fix bugs. LP update function. Build for windows.
+
+02/05/2020
+  Done: Testing Actions independently.
+  Next: Test all Actions independently. Fix other bugs.
+
+02/05/2020
+  Done: Spread Runners to separate classes.
+  Next: Test all Actions independently. Fix other bugs.
+
+01/05/2020
+  Done: Bug "TIMEOUT occurred while writing Writing Tag".
+  Next: Spread Runners to separate classes. Test all Actions independently. Fix other bugs.
+
+30/04/2020
+  Done: SIMULTANEOUSLY for reset or toggle values. Bit Setter window in the Tools menu (also Window not Windows). Bug when aborting during tag toggle.
+  Next: Bug "TIMEOUT occurred while writing Writing Tag". Test all Actions independently. Fix other bugs.
+
+29/04/2020
+  Done: Action Units: Heartbeat.
+  Next: SIMULTANEOUSLY for reset or toggle values. Test all Actions independently. Bit Setter window. Fix bugs.
+
+24/04/2020
+  Done: Action Units: Reset tag. Sleep.
+  Next: Action Units: Heartbeat. SIMULTANEOUSLY for reset or toggle values. Bit Setter window. Fix bugs.
+
+23/04/2020
+  Done: Export/Import project. Copy/Paste functionality added. "Tag doesn't exist" bug fixed.
+  Next: Action Units: Heartbeat. Reset tag. Sleep.
+
+22/04/2020
+  Done: Open links in external browser. App is to not register to EP without EP. Bug: EPStatus fired earlier than completed logging.
+  Next: Export/Import project. Heartbeat. Reset tag. Sleep.
+
+21/04/2020
+  Done: Test Runner window.
+  Next: Open links in external browser. Export/Import project. Heartbeat. Reset tag. Sleep.
+
+08/04/2020
+  Done: New Project. Set Tag Values plugin. Check Tag Values plugin.
+  Next: Reuse components for Unit Test. Heartbeat. Electron side.
+
+04/04/2020
+  Done: Major restructure. Test Result panel.
+  Next: New Project. Set Tag Values plugin. Electron side.
+
+31/03/2020
+  Done: Unit Test
+  Next: Test Result panel, Set Tag Values plugin, Electron side.
+
+19/03/2020
+  Done: Clean package.json. Tags.
+  Next Unit Test. Server side.
+
+16/03/2020
+  Done: All functions of the tree manipulation are developed and manually tested.
+  Next: TODOs, Tags and New Action Types. Clean package.json
+
+09/03/2020
+  Done: Review TODOs. Action Unit: add.
+  Next: Action Unit: move, update, delete. Move TreeNodes to workspace state.
+
+08/03/2020
+  Done: Create a new project function.
+  Next: Review TODOs. Is this.props.actionSets needed? Action Unit: add, edit, delete.
+
+08/03/2020
+  Done: IndexedDB introduced. Initial create and patch project. Action Set: add, edit, delete.
+  Next: Action Unit: add, edit, delete.
+
+03/03/2020
+  Done: Patch project. IPC Communications reviewed.
+  Next: "New Action is disabled" bug. Patch PLC Config. Creating 2 different Components for the Plugins and Details panel.
+
+02/03/2020
+  Done: Review Move Action to first position. All Functionality on Action Sets and Action Units.
+  Next: Patch PLC Config. Creating 2 different Components for the Plugins and Details panel.
+
+02/03/2020
+  Done: Delete Action Unit. Move Action Unit. IPC and other bunch of features.
+  Next: Review Move Action to first position. Creating 2 different Components for the Plugins and Details panel.
+
+29/02/2020
+  Done: Delete Action Set. IPC Comms APIs added. And bunch of bugs fixed.
+  Next: Delete Action Unit. Creating 2 different Components for the Plugins and Details panel.
+
+29/02/2020
+  Done: Fixed Add Action Set, AddAction Unit, Rename/Disable Action Set functionality.
+  Next: Delete Action Set, Delete Action Unit. Creating 2 different Components for the Plugins and Details panel.
+
+27/02/2020
+  Done: Action Set add functionality.
+  Next: Make Tree More buttons to work. Creating 2 different Components for the Plugins and Details panel.
+
+27/02/2020
+  Done: Action Unit add functionality. Tested.
+  Next: Action Set add functionality. Make Tree More buttons to work. Creating 2 different Components for the Plugins and Details panel.
+
+25/02/2020
+  Done: Started on formatting UI of the panel. Handle different plugin interfaces.
+  Next: Creating 2 different Components for the Plugins and Details panel. Make Tree More buttons to work.
+
+20/02/2020
+  Done: Add Tabs to the Details panel. Get the data to the Details Panel. Add real data to the tree.
+  Next: Format UI of the panel. Start creating different Components for the Plugins. Add real data to the tree.
+
+20/02/2020
+  Done: Complete status bar layout. UI Interaction with the TreeView
+  Next: Add Tabs to the Details panel. Get the data to the Details Panel. Add real data to the tree.
+
+18/02/2020:
+  Done: All basic functions added and working. Packaging tested.
+  Next: Start developing UI
+
+18/02/202:
+  Done: Creating the layout. Finished with the toolbar.
+  Next: Continue with the statusbar and workspace layout
+
+19/02/2020
+  Done: Added pane resizing and Add tree into the left sidebar.
+  Next: Complete status bar layout. Test log tree in side bar. Move sidebar to separate module.
+
+19/02/2020
+  Done: Sidebar tree and filter functionality added
+  Next: Complete status bar layout. Add real data to the tree.

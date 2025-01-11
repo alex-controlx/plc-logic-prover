@@ -1,0 +1,136 @@
+.plugin-container {
+  padding: 5px;
+}
+
+.plugin-container-footer-action {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+
+.plugin-container-footer-button {
+  display: flex;
+  flex-direction: column;
+}
+
+// ------- utp - Unit Test Plugin
+
+.utp--group-header {
+  display: flex;
+  align-items: center;
+}
+
+.unit-test-actions--add-button {
+  margin-left: auto;
+}
+
+.utp--actions-header-row {
+  display: flex;
+  margin-bottom: 5px;
+  //justify-content: space-between;
+}
+
+.utp--action-trash {
+  margin-left: auto;
+}
+
+.utp--group-container {
+  display: flex;
+  //justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+
+.utp--bit-select-container {
+  padding-right: 6px;
+}
+
+.utp--bit-select {
+  width: 100%;
+  border: none;
+  background-color: #137cbd26;
+  margin: 6px 0;
+  font-size: 12px;
+  color: #182026;
+}
+
+.plugins--au-config-container {
+
+}
+
+.plugins--test-config {
+
+}
+
+.plugins--post-test-config {
+
+}
+
+
+
+// --------------- INPUTS ------------------
+
+.utp--input-tagname-header {
+  width: 230px;
+  text-align: center;
+  font-size: 12px;
+}
+.utp--input-tagname > .bp3-popover-target {
+  width: 230px;
+}
+
+.utp--input-value-header {
+  width: 130px;
+  text-align: center;
+  font-size: 12px;
+  margin-left: 10px;
+}
+.utp--input-value > .bp3-input-group {
+  width: 100px;
+  margin-left: 10px;
+}
+
+// --------------- OUTPUTS ------------------
+
+.utp--output-tagname-header {
+  width: 230px;
+  text-align: center;
+  font-size: 12px;
+}
+.utp--output-tagname > .bp3-popover-target {
+  width: 230px;
+}
+
+.utp--output-value-header {
+  width: 130px;
+  text-align: center;
+  font-size: 12px;
+  margin-left: 10px;
+}
+.utp--output-value > .bp3-input-group {
+  width: 100px;
+  margin-left: 10px;
+}
+
+.utp--output-after-s-header {
+  width: 80px;
+  text-align: center;
+  font-size: 12px;
+  margin-left: 10px;
+}
+.utp--output-after-s > .bp3-input-group {
+  width: 50px;
+  margin-left: 10px;
+}
+
+.exec-options-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.helper-text {
+  margin: 2px auto;
+  font-size: 64%;
+}
+
+

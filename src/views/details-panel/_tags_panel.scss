@@ -1,0 +1,84 @@
+.ab-tags-panel {
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+  user-select: none;
+  width: 100%;
+}
+
+.ab-tags-toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ab-tags-toolbar--filter {
+
+}
+
+.ab-tags-toolbar--buttons {
+
+}
+
+.ab-tags-table-old {
+  height: auto;
+  margin-top: 10px;
+}
+
+.ab-tags-table-container {
+  margin-top: 10px;
+  overflow: auto;
+  flex: 1 1;
+  box-shadow: 0 0 0 1px rgba(16, 22, 26, 0.15)
+}
+
+.bp3-table-container {
+  max-height: none;
+  max-width: none;
+  min-height: 60px;
+}
+
+.column-header--custom {
+  display: inline-flex;
+  text-align: end;
+}
+
+.column-header--icon {
+  margin-right: 6px;
+}
+
+.ab-datatype-select {
+  width: 100%;
+  border: none;
+  background-color: #ffffff;
+}
+
+.tag-info-alert .bp3-alert-contents {
+  width: 100%;
+}
+
+.tag-info-alert > .bp3-alert-footer > .bp3-intent-primary {
+  display: none;
+}
+
+.tag-duplicate-list {
+  max-height: 400px;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.used-more-button {
+  padding: 0 0 5px 0 !important;
+  margin: 0;
+  min-width: 15px !important;
+  min-height: 10px !important;
+  text-align: center;
+}
+
+.used-more--icon {
+  vertical-align: middle;
+}
+
+.used-more--list .bp3-popover-content {
+  max-height: 200px;
+  overflow-y: auto;
+}

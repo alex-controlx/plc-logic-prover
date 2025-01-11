@@ -1,0 +1,26 @@
+@import "../../app-variables";
+
+.status-bar {
+  max-height: 26px;
+  display: flex;
+  flex: 0 0 30px;
+  width: 100%;
+  padding: 0;
+  background-color: $lp-panel-background;
+  border-top: 1px solid $lp-border-color;
+  justify-content: space-between;
+}
+
+.sb-section {
+  display: flex;
+}
+
+.sb-section--left {
+  padding-left: 6px;
+}
+
+.sb-section--right {
+  align-items: center;
+  margin-left: auto;
+  padding-right: 6px;
+}

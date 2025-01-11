@@ -1,0 +1,153 @@
+{
+  "name": "logic-prover",
+  "version": "0.1.16-dev",
+  "description": "PLC Logic Prover is a software to test PLC Logic.",
+  "author": {
+    "name": "Alex Sharikov",
+    "email": "alex@controlx.io"
+  },
+  "main": "./build-electron/src-electron/main.js",
+  "homepage": "./",
+  "scripts": {
+    "start:react": "REACT_APP_ELECTRON=disabled react-scripts start",
+    "build:react": "react-scripts build",
+    "start:react-for-electron": "BROWSER=none react-scripts start",
+    "start:just-dev-electron": "env NODE_ENV=development electron ./build-electron/src-electron/main.js",
+    "start-win:react-for-electron": "set BROWSER=none && react-scripts start",
+    "start-win:just-dev-electron": "set NODE_ENV=development && electron ./build-electron/src-electron/main.js",
+    "start:compile-electron": "electron-webpack && env NODE_ENV=development electron .",
+    "start:electron": "electron .",
+    "start:electron-tsc": "tsc -p src-electron/tsconfig.json && electron .",
+    "package:mac": "react-scripts build && tsc -p src-electron/tsconfig.json && electron-builder build --mac",
+    "package": "react-scripts build && tsc -p src-electron/tsconfig.json && electron-webpack",
+    "package:mac:linux": "npm run package && electron-builder build --mac --linux",
+    "package:win": "npm run package && electron-builder build --win --ia32 --x64",
+    "test": "REACT_APP_ELECTRON=disabled react-scripts test",
+    "test:react-storage": "npm test src/services/storage/storage.service.test.ts",
+    "test:electron": "ts-mocha -p src-electron/tsconfig.json \"src-electron/**/*.spec.ts\"",
+    "eject": "react-scripts eject"
+  },
+  "resolutions": {
+    "react-scripts/node_modules/@typescript-eslint/eslint-plugin": "^2.34.0",
+    "react-scripts/node_modules/@typescript-eslint/parser": "^2.34.0"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "electron-log": "^4.4.8",
+    "electron-updater": "^5.3.0",
+    "ethernet-ip": "^1.2.5",
+    "moment": "^2.29.4",
+    "task-easy": "^1.0.1"
+  },
+  "devDependencies": {
+    "@blueprintjs/core": "^4.13.0",
+    "@blueprintjs/select": "^4.8.12",
+    "@blueprintjs/table": "^4.7.10",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/chai": "^4.3.4",
+    "@types/crypto-js": "^4.1.1",
+    "@types/jest": "^29.2.5",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^14.18.36",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.10",
+    "@types/react-router-dom": "^5.3.3",
+    "chai": "^4.3.7",
+    "crypto-js": "^4.1.1",
+    "electron": "^22.0.0",
+    "electron-builder": "^23.6.0",
+    "electron-webpack": "^2.8.2",
+    "events": "^3.3.0",
+    "fake-indexeddb": "^4.0.1",
+    "form-data": "^4.0.0",
+    "glob": "^8.0.3",
+    "localforage": "^1.10.0",
+    "mocha": "^10.2.0",
+    "node-fetch": "^3.3.0",
+    "node-sass": "^8.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.6.1",
+    "react-scripts": "^5.0.1",
+    "source-map-support": "^0.5.21",
+    "ts-mocha": "^10.0.0",
+    "typescript": "^4.9.4"
+  },
+  "build": {
+    "productName": "PLC Logic Prover",
+    "appId": "io.controlx.logic-prover",
+    "extends": null,
+    "artifactName": "plc-logic-prover-${os}-${version}.${ext}",
+    "directories": {
+      "output": "release/"
+    },
+    "files": [
+      "build-electron/**/*",
+      "build/**/*",
+      "package.json"
+    ],
+    "publish": [
+      {
+        "provider": "generic",
+        "url": "https://dl.controlx.io/updates/"
+      }
+    ],
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    },
+    "nsis": {
+      "oneClick": true
+    },
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ]
+    },
+    "dmg": {
+      "contents": [
+        {
+          "x": 130,
+          "y": 220
+        },
+        {
+          "x": 410,
+          "y": 220,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "category": "Development"
+    }
+  },
+  "electronWebpack": {
+    "main": {
+      "sourceDirectory": "build-electron/src-electron"
+    },
+    "renderer": null
+  }
+}

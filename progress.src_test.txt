@@ -1,0 +1,31 @@
+03/11/2020
+    Done: ResultsDb Service - Test all methods
+
+01/11/2020
+    Done:
+        ActionUnitDb Service - Test all methods
+
+31/10/2020
+    Done:
+        ProjectDb Service - Test all methods
+        ActionSetDb Service - Test all methods
+
+28/10/2020
+    Done:
+        Storage - Action Units
+        Storage - Validity of Action Units
+        Storage - Migrate confirmDbIntegrity
+
+21/10/2020
+    Done:
+        UnitCheckerDb Service - Test all methods
+
+    Next:
+        √ Storage - Action Units
+        √ Storage - Validity of Action Units
+        √ Storage - Migrate confirmDbIntegrity
+        √ ProjectDb Service - Test all methods
+        √ ActionSetDb Service - Test all methods
+        √ ActionUnitDb Service - Test all methods
+        √ ResultsDb Service - Test all methods
+        AbTags Service - Test all methods

@@ -1,0 +1,96 @@
+@import "../../app-variables";
+
+.left-sidebar-wrapper {
+  flex: 0 0 auto;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 300px;
+}
+
+.workspace-left-sidebar {
+  contain: strict;
+  background-color: $lp-panel-background;
+  z-index: 20;
+  border-right: 1px solid $lp-border-color;
+  box-sizing: border-box;
+  box-shadow: 1px 0 4px 0 $lp-border-color;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: hidden;
+}
+
+.workspace-left-sidebar-resize-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -2px;
+  width: 10px;
+  z-index: 100;
+  cursor: col-resize;
+}
+
+.sidebar-resize-handle-icon {
+  position: absolute;
+  top: 50%;
+  left: -5px;
+}
+
+.workspace-left-sidebar__search-container {
+  flex: 0 0 40px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.workspace-left-sidebar__tabs-container {
+  flex: 0 0 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--hairline-regular);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.workspace-left-sidebar__tab-content-wrapper {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.action-set-sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: $lp-tree-panel-background;
+}
+
+.action-set-sidebar-list {
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-bottom: 20px;
+  transform: translateZ(0);
+  padding-top: 1px;
+}
+
+.action-set-sidebar-tree {
+  //margin-top: 10px;
+}
+
+.sidebar-tools {
+  text-align: right;
+  background-color: $lp-panel-background;
+  padding: 2px 0;
+  border-bottom: 1px solid $lp-border-color;
+}
+
+.empty-sidebar-message {
+  padding: 10px;
+  text-align: center;
+}

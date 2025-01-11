@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+        body {
+            margin: 0;
+            background-color: white;
+            text-transform:none;
+            letter-spacing:0;
+            font-size:14px;
+            font-weight:400;
+            color:#182026;
+            font-family:-apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Helvetica Neue", "Icons16", sans-serif;
+        }
+        .container {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .logo {
+            height: 50px;
+        }
+        .new-line {
+            margin-top: 6px;
+        }
+        .inner-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="inner-container">
+        <img class="logo" alt="ControlX logo" src="./controlx_logo.png"/>
+        <h2>PLC Logic Prover</h2>
+        <small id="version">Version X.X.X</small>
+        <p style="text-align: center"><strong>The quality of a PLC program is defined by the quantity of tests</strong></p>
+        <br/>
+        <a my-link="https://github.com/controlx-io/logic-prover-support/wiki/Documentation" href="#">Documentation</a>
+        <a class="new-line" my-link="https://github.com/controlx-io/logic-prover-support/issues" href="#">Report Issues</a>
+        <br/>
+
+    </div>
+    <div class="inner-container">
+        <small>It is open source</small>
+    </div>
+</div>
+<script src="about.js" async></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "strictBindCallApply": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "alwaysStrict": true,
+    "outDir": "../build-electron",
+    "sourceMap": true,
+    "declaration": true,
+    "resolveJsonModule": true,
+    "lib": ["es2019", "es2020.string", "es2020.symbol.wellknown", "dom"],
+    "module": "commonjs",
+    "target": "es2019",
+    "types": [
+      "node"
+    ],
+
+    /* Advanced Options */
+    "skipLibCheck": true,                     /* Skip type checking of declaration files. */
+  },
+  "include": [
+    "../src-electron/**/*"
+  ],
+  "exclude": [
+    "../node_modules",
+    "./**/*.spec.ts",
+    "./__tests__/**/*"
+  ],
+  "files": [
+    "./ethernet-ip.d.ts"
+  ]
+}
