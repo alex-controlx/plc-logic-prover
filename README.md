@@ -2,16 +2,18 @@
 The quality of a PLC program is defined by the quantity of tests.
 
 To build and run locally started:
-    1. Clone the repo
-    2. Run `npm install`
-    3. Run `npm run build:react`
-    4. Run `npm run start:electron-tsc`
+
+1. Clone the repo
+2. Run `npm install`
+3. Run `npm run build:react`
+4. Run `npm run start:electron-tsc`
 
 
 To package in one file:
-    1. Node.js v16 is required, use `nvm install 16`
-    2. Run `npm run package:mac:linux`
-    3. Run `npm run package:win`
+
+1. Node.js v16 is required, use `nvm install 16`
+2. Run `npm run package:mac:linux`
+3. Run `npm run package:win`
 
 
 ### Building and Publishing
